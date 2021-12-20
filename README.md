@@ -44,10 +44,12 @@ block(:, Nd - (Td + Gd) + 1 : end  ) = off_threshold;
 
 # Results
 The image contains a frequency peak obtained using 1D - FFT at around 111 m from the current postion indicating a object.
+
 ![test](https://github.com/mdevana/Sensor_fusion_Radar_detection/blob/main/Images/FFT1_image.png)
 
-The image shows the Range Doppler Map.
+The image shows the Range Doppler Map indicating a moving target at 111 m moving at 20 m/s 
+
 ![test](https://github.com/mdevana/Sensor_fusion_Radar_detection/blob/main/Images/FFt2_image.png)
 
-The image shows result of CFAR processing of Range Doppler Map which indicates the presence of object at  
+The image shows result of CFAR processing of Range Doppler Map which indicates the presence of object at 111 m
 ![test](https://github.com/mdevana/Sensor_fusion_Radar_detection/blob/main/Images/Cfar_image.png)
