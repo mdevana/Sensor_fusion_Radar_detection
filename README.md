@@ -35,6 +35,14 @@ CFAR processing start with creation of Range Doppler Map using 2D FFT. To obtain
 
 By computing the possible cell average of Range Doppler Matrix and applying the threshold, a thresholded block matrix is generated with 1's in cells where is signal is above the average noise level. This matrix is however is smaller than Range Doppler matrix as CUT cannot be located at the edges of the matrix. The following code is will ensure the non-thresholded cells are set to zero as well.
 
+```
+off_threshold = 0;
+block(1 : Tr + Gr,:) = off_threshold;
+block(Nr/2 - (Tr + Gr) + 1 : end, : ) = off_threshold;
+block(:, 1 : Td + Gd) = off_threshold;
+block(:, Nd - (Td + Gd) + 1 : end  ) = off_threshold;
+```
+
 # Results
 
 ![test](https://github.com/mdevana/Sensor_fusion_Radar_detection/blob/main/Images/FFT1_image.png)
