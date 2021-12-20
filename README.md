@@ -30,7 +30,7 @@ CFAR processing start with creation of Range Doppler Map using 2D FFT. To obtain
 2. For each Cell under Test (CUT) , we need a set of cells to seperate the training cells from the CUT cell. This is defined by the variables Gr and Gd which are set equally to 4, which ensures zero leakage of signal from CUT cell to training cell.
 3. To set the threshold for target detection, a constant number or offset is added to average noise calculated from training cells. This offset is calculated such that a robust threshold value is obtained to detect the real target. The value set here is 10 in db.
 
-
+# Suppression of non thresholded values
 By computing the possible cell average of Range Doppler Matrix and applying the threshold, a thresholded block matrix is generated with 1's in cells where is signal is above the average noise level. This matrix is however is smaller than Range Doppler matrix as CUT cannot be located at the edges of the matrix. The following code is will ensure the non-thresholded cells are set to zero as well.
 
 ```
