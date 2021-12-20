@@ -1,7 +1,8 @@
 # Sensor_fusion_Radar_detection
-This repository contains Matlab files that illustrates Radar Detection of a target using methods like Doppler and CFAR cell avaraging
 
-## Basic Data and Assumptions
+## Goal
+This repository contains Matlab files that illustrates Radar Detection of a target using methods like Doppler and CFAR cell avaraging. In this project, the Radar behavior is modeled using sender and receiver signal. From this Signal, the position of a object needs to estimated using methods likes 1-D FFT, 2-D FFT and CA- CFAR. This project is executed as Udacity Sensor Fusion Nanodegree Program.
+
 
 ## Radar Perception
 Radar technology is increasingly used for advanced driver assistance systems (ADAS) to detect objects in vicinity of the car.The advancements in the RF technologies and Digital Signal processing have made it possible to design efficient radars at low cost and in smaller sizes. The radar's capability to determine the targets at long range with accurate velocity and spatial information make it an important sensor for self driving applications. Additionally, its capability to sense objects in dark and poor weather (rain, fog) conditions also help it cover the domains where LIDAR or camera may fail. 
