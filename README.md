@@ -51,5 +51,7 @@ The image shows the Range Doppler Map indicating a moving target at 111 m moving
 
 ![test](https://github.com/mdevana/Sensor_fusion_Radar_detection/blob/main/Images/FFt2_image.png)
 
-The image shows result of CFAR processing of Range Doppler Map which indicates the presence of object at 111 m
+The image shows result of CFAR processing of Range Doppler Map which indicates the presence of object at 111 m and velocity of 20 m/s 
+and noise suppression.
+
 ![test](https://github.com/mdevana/Sensor_fusion_Radar_detection/blob/main/Images/Cfar_image.png)
