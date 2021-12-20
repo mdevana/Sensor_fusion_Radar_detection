@@ -29,11 +29,11 @@ CFAR processing start with creation of Range Doppler Map using 2D FFT. To obtain
 4. The resulting signals is then converted to logarithmic scale to create a Range Doppler Map.
 
 # Selection of Training, guard and offset cells
-1. For each Cell under Test (CUT) , we need a set of cells to average out the signal to detect the noise level. This is defined by the variable Tr and Td for both range and doppler dimentions. For this project a value of 8 and 6 are selected which is in propotion to Nr and Nd and gives enough number of cells to average the noise.
+1. For each Cell under Test (CUT) , we need a set of cells to average out the signal to detect the noise level. This is defined by the variable Tr and Td for both range and doppler dimentions. For this project a value of 8 and 6 are selected which is in proportion to Nr and Nd and gives enough number of cells to average the noise.
 2. For each Cell under Test (CUT) , we need a set of cells to seperate the training cells from the CUT cell. This is defined by the variables Gr and Gd which are set equally to 4, which ensures zero leakage of signal from CUT cell to training cell.
 3. To set the threshold for target detection, a constant number or offset is added to average noise calculated from training cells. This offset is calculated such that a robust threshold value is obtained to detect the real target. The value set here is 10 in db.
 
-By computing the possible cell avarage of Range Doppler Matrix and applying the threshold, a thresholded block matrix is generated with 1's in cells where is signal is above the average noise level. This matrix is however is smaller than Range Doppler matrix as CUT cannot be located at the edges of the matrix. The following code is will ensure the non-thresholded cells are set to zero as well.
+By computing the possible cell average of Range Doppler Matrix and applying the threshold, a thresholded block matrix is generated with 1's in cells where is signal is above the average noise level. This matrix is however is smaller than Range Doppler matrix as CUT cannot be located at the edges of the matrix. The following code is will ensure the non-thresholded cells are set to zero as well.
 
 # Results
 
